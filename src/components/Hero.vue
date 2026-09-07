@@ -55,6 +55,7 @@
 </template>
 
 <style scoped>
+
 .hero {
   min-height: 100vh;
 
@@ -118,15 +119,18 @@
 .hero h2 {
   max-width: 800px;
 
-  margin-top: 30px;
+  margin: 0;
 
   font-size: clamp(1.8rem, 4vw, 3rem);
-  line-height: .5;
+  line-height: 1.1;
 
   font-weight: 500;
   letter-spacing: -0.04em;
 }
 
+.hero h2 + h2 {
+  margin-top: 8px;
+}
 
 .hero-description {
   max-width: 700px;
