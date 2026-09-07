@@ -46,7 +46,7 @@
       </div>
 
       <div class="hero-photo">
-        <img src="/images/marcelo.png" alt="Marcelo Molina - Senior Backend .NET Developer" />
+        <img src="/images/profile.jpg" alt="Marcelo Molina - Senior Backend .NET Developer" />
       </div>
 
     </div>
