@@ -16,7 +16,7 @@
 
       <div class="contact-links">
 
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/juan-marcelo-molina" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
 
