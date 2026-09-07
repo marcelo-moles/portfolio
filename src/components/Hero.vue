@@ -15,6 +15,7 @@
         <h2>
           Senior Backend .NET Developer
         </h2>
+        <h2>Full Stack Developer</h2>
 
         <p class="hero-description">
           I design and build scalable backend solutions using
@@ -120,11 +121,12 @@
   margin-top: 30px;
 
   font-size: clamp(1.8rem, 4vw, 3rem);
-  line-height: 1.15;
+  line-height: .5;
 
   font-weight: 500;
   letter-spacing: -0.04em;
 }
+
 
 .hero-description {
   max-width: 700px;
