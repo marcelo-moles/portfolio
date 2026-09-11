@@ -44,7 +44,7 @@
           </a>
 
           <a
-            href="https://www.linkedin.com/in/marcelo-molina/"
+            href="https://www.linkedin.com/in/juan-marcelo-molina/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
