@@ -1,0 +1,291 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Abouts",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "Engineering": "Engineering",
+    "Education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "SENIOR BACKEND DEVELOPER",
+    "name": "MARCELO MOLINA",
+    "subtitle1": "Senior Backend .NET Developer",
+    "subtitle2": "Full Stack Developer",
+    "description": "I design and build scalable backend solutions using C#, .NET, REST APIs, microservices and modern software architecture principles.",
+    "btnViewProjects": "View Projects",
+    "btnGitHub": "GitHub",
+    "btnCVEspaniol": "CV · ES",
+    "btnCVEnglish": "CV · EN"
+  },
+  "about": {
+    "eyebrow": "Professional profile",
+    "title": "About",
+    "intro": "Senior Backend .NET Developer specialized in designing and building robust, scalable and maintainable backend solutions.",
+    "description1": "I have more than 10 years of software development experience, mainly working with C#, .NET, REST APIs, microservices and databases.",
+    "description2": "My experience includes enterprise and banking environments, where I have worked on backend services, integrations, business logic and solutions focused on availability and maintainability.",
+    "description3": "I particularly enjoy solving complex problems through solid engineering practices, applying SOLID principles, Clean Architecture, Domain-Driven Design and proven design patterns.",
+    "stats": {
+      "experience": "Years of experience",
+      "backend": "Backend specialization",
+      "apis": "API development",
+      "architecture": "Architecture & design"
+    },
+    "focus": {
+      "backend": {
+        "title": "Backend Engineering",
+        "description": "Development of APIs, services and backend systems using C#, .NET and ASP.NET Core."
+      },
+      "architecture": {
+        "title": "Software Architecture",
+        "description": "Solution design using Clean Architecture, DDD, SOLID and maintainability-focused engineering principles."
+      },
+      "data": {
+        "title": "Data & Integration",
+        "description": "Experience with SQL Server, MongoDB, messaging, integrations and data processing."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Professional journey",
+    "title": "Experience",
+    "fullTime": "Full time",
+
+     "FreeSoftwareDev":{
+      "period": "March 2014 – Present",
+      "position": "Full Stack Developer",
+      "company": "Freelance Software Developer",
+      "description":      "Freelance software development for different clients and projects, working across backend, web applications, APIs and database solutions.",
+    "responsibilities": [
+      "Backend development using C# / .NET, Java, Python and Node.js.",
+      "Frontend development using Vue.js and React.js.",
+      "Database development and data management using SQL Server and MongoDB.",
+      "Designed and implemented REST APIs, business logic, integrations and backend services.",
+      "Worked independently throughout the software development lifecycle, from requirements analysis and solution design to implementation and delivery.",
+      "Adapted technology and architecture to the specific requirements of each project."
+    ],
+    "technologies": [
+      "C#",
+      ".NET",
+      "Java",
+      "Python",
+      "Microservices",
+      "Node.js",
+      "REST API",
+      "Mongo DB",
+      "SQL Server",
+      "Vue.js",
+      "React.js"
+    ]
+  },
+
+    "visma": {
+      "period": "2020 — 2023",
+      "position": "Senior Backend .NET Developer",
+      "company": "Visma",
+      "description": "Backend development of enterprise solutions within a SaaS environment, mainly working with .NET, APIs and business-oriented services.",
+      "responsibilities": [
+        "Development and maintenance of REST APIs and backend services.",
+        "Implementation of business logic and features for enterprise applications.",
+        "Work with service-oriented architectures and Clean Architecture principles.",
+        "Design and optimization of database queries and operations.",
+        "Integration between different services and systems.",
+        "Participation in technical analysis, problem solving and application evolution."
+      ],
+      "technologies": [
+        "C#",
+        ".NET",
+        "ASP.NET Core",
+        "REST APIs",
+        "SQL Server",
+        "MongoDB",
+        "Docker",
+        "Git"
+      ]
+    },
+    "icbc": {
+      "period": "2024 — Present",
+      "position": "Senior Backend .NET Developer",
+      "company": "ICBC",
+      "description": "Backend development for banking environments, working on APIs, services, integrations and components supporting critical business processes.",
+      "responsibilities": [
+        "Development of REST APIs and backend services using C# and .NET.",
+        "Implementation of business logic and system integrations.",
+        "Development of microservices and distributed components.",
+        "Work with SQL Server databases and NoSQL solutions.",
+        "Application of SOLID, DDD and Clean Architecture principles.",
+        "Technical analysis, incident resolution and evolution of existing services."
+      ],
+      "technologies": [
+        "C#",
+        ".NET 8/9",
+        "ASP.NET Core",
+        "REST APIs",
+        "Microservices",
+        "SQL Server",
+        "MongoDB",
+        "Kafka",
+        "Docker"
+      ]
+    }
+  },
+  "skills": {
+    "eyebrow": "Technologies",
+    "title": "Technical Skills",
+    "backend": {
+      "category": "Core",
+      "title": "Backend"
+    },
+    "architecture": {
+      "category": "Engineering",
+      "title": "Architecture"
+    },
+    "data": {
+      "category": "Persistence",
+      "title": "Data"
+    },
+    "messaging": {
+      "category": "Distributed Systems",
+      "title": "Messaging"
+    },
+    "devops": {
+      "category": "Infrastructure",
+      "title": "DevOps"
+    },
+    "frontend": {
+      "category": "Web",
+      "title": "Frontend"
+    }
+  },
+  "architecture": {
+    "eyebrow": "Engineering",
+    "title": "Architecture",
+    "description": "I design backend solutions focused on separation of concerns, maintainability, scalability and long-term evolution.",
+    "layers": {
+      "clients": {
+        "label": "Presentation",
+        "title": "Clients & External Systems",
+        "description": "Web applications, mobile applications and external consumers"
+      },
+      "api": {
+        "label": "Interface",
+        "title": "API & Services",
+        "description": "REST APIs, authentication, validation and service endpoints"
+      },
+      "application": {
+        "label": "Application",
+        "title": "Application Layer",
+        "description": "Use cases, application services, DTOs and orchestration"
+      },
+      "domain": {
+        "label": "Core",
+        "title": "Domain Layer",
+        "description": "Business rules, entities, value objects and domain logic"
+      },
+      "infrastructure": {
+        "label": "Infrastructure",
+        "title": "Infrastructure",
+        "description": "SQL Server, MongoDB, Redis, Kafka, Docker and external integrations"
+      }
+    },
+    "principles": {
+      "clean": {
+        "title": "Clean Architecture",
+        "description": "Clear separation of responsibilities with dependencies directed toward the domain."
+      },
+      "ddd": {
+        "title": "Domain-Driven Design",
+        "description": "Software modeling centered around the domain and its business rules."
+      },
+      "solid": {
+        "title": "SOLID Principles",
+        "description": "Five principles for object-oriented design that promote maintainability and flexibility."
+      },
+      "microservices": {
+        "title": "Microservices",
+        "description": "Independent services with well-defined responsibilities and room for evolution."
+      },
+      "events": {
+        "title": "Event-Driven",
+        "description": "Decoupled communication through events and messaging systems."
+      }
+    }
+  },
+
+  "projects": {
+  "eyebrow": "Proyects",
+  "title": "Featured Projects",
+  "github": "View on GitHub",
+
+  "items": {
+    "corporateexpenses": {
+      "title": "Corporate Expenses",
+      "description": "Backend application focused on expense management, implemented with .NET, Domain-Driven Design, Clean Architecture and MongoDB.",
+      "status": "Available"
+    },
+    "ecommerceapi": {
+      "title": "E-Commerce API",
+      "description": "Backend API for an e-commerce solution using .NET, MongoDB and RESTful API principles.",
+      "status": "Coming soon"
+    },
+     "apiprocesaarchivos": {
+      "title": "Api Procesa Archivos",
+     "description":"API designed for processing large text files, focusing on performance, reliability and efficient backend processing.",
+      "status": "Coming soon"
+    },
+    "ai": {
+      "title": "AI Data Analysis Platform",
+      "description": "AI-powered solution built with Python and .NET for analyzing large data files, detecting inconsistencies and potential anomalies, and persisting analysis results in SQL Server.",
+      "status": "Coming soon"
+    }
+  }
+},
+  "education": {
+    "eyebrow": "Education",
+    "title": "Education",
+    "completed": "Degree completed",
+    "systems": {
+      "title": "Systems Analyst",
+      "institution": "ISFDyT N.º 32",
+      "description": "Academic training focused on the analysis, design and development of information systems and technology solutions.",
+      "average": "GPA: 8.00"
+    },
+    "business": {
+      "title": "Business Administration Analyst",
+      "institution": "ISFDyT N.º 32",
+      "description": "Academic training in administration, business management, organizational processes and information analysis for decision-making.",
+      "average": "GPA: 8.75"
+    },
+    "degree": {
+      "title": "Bachelor's Degree in Business Administration",
+      "institution": "National University of Quilmes",
+      "description": "University education in administration and management, complementing technical experience with a business and organizational perspective.",
+      "status": "4th year completed · 2022",
+      "average": "GPA: 9.00"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's work together",
+    "heading": "Have a project or an opportunity?",
+    "description": "I am open to new professional opportunities related to backend development, .NET, APIs, microservices and software solutions.",
+    "availability": "Available for new opportunities",
+    "email": {
+      "label": "Email"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "value": "Professional profile"
+    },
+    "github": {
+      "label": "GitHub",
+      "value": "Repositories and projects"
+    }
+  },
+  "footer": {
+    "role": "Senior Backend .NET Developer",
+    "rights": "All rights reserved"
+  }
+}

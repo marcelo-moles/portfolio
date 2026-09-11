@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -38,6 +39,27 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+  box-shadow:
+    0 10px 30px rgba(0, 174, 255, 0.18);
+}
+
+.btn-secondary:hover {
+  border-color: rgba(0, 174, 255, 0.45);
 }
 
 .container {
@@ -825,4 +847,154 @@ a {
   box-shadow:
     0 0 6px #00aeff,
     0 0 14px rgba(0, 174, 255, 0.7);
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+ /* =========================================
+    GLOBAL RESPONSIVE
+ ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================
+   CONTAINER
+ ========================================= */
+
+.container {
+  width: min(100% - 40px, 1200px);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECTIONS
+ ========================================= */
+
+.section {
+  position: relative;
+
+  padding: 110px 0;
+}
+
+
+/* =========================================
+   TABLET
+ ========================================= */
+
+@media (max-width: 1024px) {
+
+  .container {
+    width: min(100% - 48px, 1100px);
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+ ========================================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: min(100% - 36px, 700px);
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+ ========================================= */
+
+@media (max-width: 430px) {
+
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+
+}
+
+.section-header {
+  min-width: 0;
+}
+
+.section-header > div {
+  min-width: 0;
+}
+
+.section-header h2 {
+  overflow-wrap: break-word;
 }

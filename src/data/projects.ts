@@ -1,4 +1,5 @@
 export interface Project {
+  id: string
   title: string
   description: string
   technologies: string[]
@@ -24,6 +25,7 @@ export interface Arquitectura {
 
 export const projects: Project[] = [
   {
+    id: 'corporateexpenses',
     title: 'Corporate Expenses',
     description:
       'Backend application focused on expense management, implemented with .NET, Domain-Driven Design, Clean Architecture and MongoDB.',
@@ -35,39 +37,42 @@ export const projects: Project[] = [
       'MongoDB',
       'Docker'
     ],
-    status: 'coming soon',
-    featured: true
+    status: 'completed',
+    featured: true,
+    github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample',
   },
   {
+    id: 'ecommerceapi',
     title: 'ECommerce API',
     description:
-      'Backend API for an e-commerce solution using ASP.NET Core, MongoDB and RESTful API principles.',
+      'Backend API for an e-commerce solution using .NET, MongoDB and RESTful API principles.',
     technologies: [
       'C#',
       '.NET',
-      'ASP.NET Core',
       'REST API',
       'MongoDB',
       'Docker'
     ],
     status: 'coming soon',
-    featured: true
+    featured: true,
+    //github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample',
   },
   {
+    id: 'apiprocesaarchivos',
     title: 'Api Procesa Archivos',
-    description:
-      'API designed for processing large text files, focusing on performance, reliability and efficient backend processing.',
+    description:'API designed for processing large text files, focusing on performance, reliability and efficient backend processing.',
     technologies: [
       'C#',
       '.NET',
-      'ASP.NET Core',
       'REST API',
-      'Performance'
+      'SQL Server',
     ],
     status: 'coming soon',
-    featured: true
+    featured: true,
+    //github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample',
   },
   {
+    id: 'ai',
     title: 'AI Data Analysis Platform',
     description: 'AI-powered solution built with Python and .NET for analyzing large data files, detecting inconsistencies and potential anomalies, and persisting analysis results in SQL Server.',
     technologies: [
@@ -80,7 +85,8 @@ export const projects: Project[] = [
       'Large File Processing'
     ],
     featured: false,
-    status: 'coming soon'
+    status: 'coming soon',
+    //github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample',
   }
 ]
 
