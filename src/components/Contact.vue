@@ -55,34 +55,27 @@ import { Icon } from '@iconify/vue'
         <div class="contact-cards">
 
           <!-- EMAIL -->
-<a
-  href="mailto:juanmarcelomolina2@gmail.com"
-  target="_blank" rel="noopener noreferrer"
-  class="contact-card"
->
-  <div class="contact-icon">
-    <Icon icon="mdi:email" />
-  </div>
+          <a href="mailto:juanmarcelomolina2@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <Icon icon="mdi:email" />
+            </div>
 
-  <div class="contact-card-content">
-    <span class="contact-card-label">
-      {{ $t('contact.email.label') }}
-    </span>
+            <div class="contact-card-content">
+              <span class="contact-card-label">
+                {{ $t('email.label') }}
+              </span>
 
-    <span class="contact-card-value">
-      juanmarcelomolina2@gmail.com
-    </span>
-  </div>
+              <span class="contact-card-value">
+                {{ $t('email.action') }}
+              </span>
+            </div>
 
-  <Icon icon="mdi:arrow-top-right" class="contact-arrow" />
-</a>
-
-
+            <Icon icon="mdi:arrow-top-right" class="contact-arrow" />
+          </a>
 
           <!-- LINKEDIN -->
 
-          <a href="https://www.linkedin.com/in/juan-marcelo-molina/" target="_blank" 
-            rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/juan-marcelo-molina/" target="_blank" rel="noopener noreferrer"
             class="contact-card">
 
             <div class="contact-icon">

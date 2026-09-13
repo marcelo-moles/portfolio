@@ -283,5 +283,9 @@
   "footer": {
     "role": "Senior Backend .NET Developer",
     "rights": "Todos los derechos reservados"
-  }
+  },
+  "email": {
+  "label": "Email",
+  "action": "Enviame un email"
+}
 }

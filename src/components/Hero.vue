@@ -63,15 +63,15 @@
             {{ $t('hero.btnGitHub') }}
           </a>
 
-
-          <a :href="cvSpanishUrl" download="Marcelo-Molina-CV-ES.pdf" class="btn btn-secondary">
-            {{ $t('hero.btnCVEspaniol') }}
+          <a :href="cvSpanishUrl" download="Marcelo-Molina-CV-ES.pdf" class="btn btn-secondary cv-download"
+            title="Descargar CV en español"> <span class="cv-flag">🇦🇷</span>
+            <Icon icon="solar:download-minimalistic-linear" />
+            
+          </a> <a :href="cvEnglishUrl" download="Marcelo-Molina-CV-EN.pdf" class="btn btn-secondary cv-download"
+            title="Download CV in English"> <span class="cv-flag">🇬🇧</span>
+            <Icon icon="solar:download-minimalistic-linear" />
           </a>
 
-
-          <a :href="cvEnglishUrl" download="Marcelo-Molina-CV-EN.pdf" class="btn btn-secondary">
-            {{ $t('hero.btnCVEnglish') }}
-          </a>
 
         </div>
 
@@ -129,6 +129,7 @@
 
 <script setup lang="ts">
 const baseUrl = import.meta.env.BASE_URL
+import { Icon } from '@iconify/vue'
 
 const cvSpanishUrl = `${baseUrl}cv/MarceloMolina.pdf`
 const cvEnglishUrl = `${baseUrl}cv/MarceloMolina_EN.pdf`
@@ -884,6 +885,23 @@ const cvEnglishUrl = `${baseUrl}cv/MarceloMolina_EN.pdf`
     bottom: 35px;
     left: 30px;
   }
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.cv-flag {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.cv-download svg {
+  width: 18px;
+  height: 18px;
 }
 
 @media (max-width: 768px) {
