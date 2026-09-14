@@ -39,8 +39,9 @@ export const projects: Project[] = [
     ],
     status: 'completed',
     featured: true,
-    github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample',
+    github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample/tree/main',
   },
+
   {
     id: 'ecommerceapi',
     title: 'ECommerce API',
@@ -48,19 +49,22 @@ export const projects: Project[] = [
       'Backend API for an e-commerce solution using .NET, MongoDB and RESTful API principles.',
     technologies: [
       'C#',
-      '.NET',
+      '.NET 8',
       'REST API',
+      'DDD',
+      'Clean Architecture',
       'MongoDB',
       'Docker'
     ],
-    status: 'coming soon',
+    status: 'completed',
     featured: true,
-    //github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample',
+    github: 'https://github.com/marcelo-moles/ecommerce-api',
   },
+
   {
     id: 'apiprocesaarchivos',
     title: 'Api Procesa Archivos',
-    description:'API designed for processing large text files, focusing on performance, reliability and efficient backend processing.',
+    description: 'API designed for processing large text files, focusing on performance, reliability and efficient backend processing.',
     technologies: [
       'C#',
       '.NET',

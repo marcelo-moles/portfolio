@@ -234,7 +234,7 @@
       "ecommerceapi": {
         "title": "E-Commerce API",
         "description": "API backend para una solución de comercio electrónico desarrollada con .NET, MongoDB y principios REST.",
-        "status": "Próximamente"
+        "status": "Disponible"
       },
       "apiprocesaarchivos": {
         "title": "Api Procesa Archivos",
