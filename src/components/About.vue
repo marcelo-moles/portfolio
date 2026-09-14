@@ -1,5 +1,4 @@
 <template>
-  <div class="section-divider"></div>
   <section id="about" class="section about">
     <div class="container">
 

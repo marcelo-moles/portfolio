@@ -9,6 +9,7 @@
     "Education": "Educación",
     "contact": "Contacto"
   },
+
   "about": {
     "eyebrow": "Perfil profesional",
     "title": "Sobre mí",
@@ -37,6 +38,7 @@
       }
     }
   },
+
   "hero": {
     "title": "DESARROLLADOR BACKEND SENIOR",
     "name": "MARCELO MOLINA",
@@ -48,12 +50,14 @@
     "btnCVEspaniol": "CV · ES",
     "btnCVEnglish": "CV · EN"
   },
+
   "experience": {
     "eyebrow": "Trayectoria profesional",
     "title": "Experiencia",
     "fullTime": "Full time",
+
     "FreeSoftwareDev": {
-      "period": "Marzo 2014 – Present",
+      "period": "Marzo 2014 – Presente",
       "position": "Desarrollador Full Stack",
       "company": "Desarrollador de Software Freelance",
       "description": "Desarrollo de software freelance para diferentes clientes y proyectos, trabajando en backend, aplicaciones web, APIs y soluciones de bases de datos.",
@@ -79,6 +83,7 @@
         "React.js"
       ]
     },
+
     "visma": {
       "period": "Marzo 2020 — Septiembre 2023",
       "position": "Senior Backend .NET Developer",
@@ -103,6 +108,7 @@
         "Git"
       ]
     },
+
     "icbc": {
       "period": "Febrero 2024 — Mayo 2026",
       "position": "Senior Backend .NET Developer",
@@ -129,6 +135,7 @@
       ]
     }
   },
+
   "skills": {
     "eyebrow": "Tecnologías",
     "title": "Habilidades Técnicas",
@@ -149,7 +156,7 @@
       "title": "Mensajería"
     },
     "devops": {
-      "category": "Infrastructura",
+      "category": "Infraestructura",
       "title": "DevOps"
     },
     "frontend": {
@@ -157,6 +164,7 @@
       "title": "Frontend"
     }
   },
+
   "architecture": {
     "eyebrow": "Ingeniería",
     "title": "Arquitectura",
@@ -211,10 +219,12 @@
       }
     }
   },
+
   "projects": {
     "eyebrow": "Proyectos",
     "title": "Proyectos destacados",
     "github": "Ver en GitHub",
+
     "items": {
       "corporateexpenses": {
         "title": "Corporate Expenses",
@@ -238,22 +248,26 @@
       }
     }
   },
+
   "education": {
     "eyebrow": "Formación",
     "title": "Educación",
     "completed": "Título obtenido",
+
     "systems": {
       "title": "Analista de Sistemas",
       "institution": "ISFDyT N.º 32",
       "description": "Formación orientada al análisis, diseño y desarrollo de sistemas de información y soluciones tecnológicas.",
       "average": "Promedio: 8.00"
     },
+
     "business": {
       "title": "Analista en Administración de Empresas",
       "institution": "ISFDyT N.º 32",
       "description": "Formación en administración, gestión empresarial, procesos organizacionales y análisis de información para la toma de decisiones.",
       "average": "Promedio: 8.75"
     },
+
     "degree": {
       "title": "Licenciatura en Administración",
       "institution": "Universidad Nacional de Quilmes",
@@ -262,30 +276,51 @@
       "average": "Promedio: 9.00"
     }
   },
+
   "contact": {
     "eyebrow": "Contacto",
     "title": "Trabajemos juntos",
     "heading": "¿Tenés un proyecto o una oportunidad?",
     "description": "Estoy abierto a nuevas oportunidades profesionales relacionadas con desarrollo backend, .NET, APIs, microservicios y soluciones de software.",
     "availability": "Disponible para nuevas oportunidades",
+
     "email": {
       "label": "Email"
     },
+
+    "emailForm": {
+      "label": "Contacto",
+      "title": "Enviame un mensaje",
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "cancel": "Cancelar",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado correctamente!",
+      "errorRequired": "Por favor, completá todos los campos.",
+      "errorSend": "Ocurrió un error al enviar el mensaje."
+    },
+
     "linkedin": {
       "label": "LinkedIn",
       "value": "Perfil profesional"
     },
+
     "github": {
       "label": "GitHub",
       "value": "Repositorios y proyectos"
     }
   },
+
   "footer": {
     "role": "Senior Backend .NET Developer",
     "rights": "Todos los derechos reservados"
   },
+
   "email": {
-  "label": "Email",
-  "action": "Enviame un email"
-}
+    "label": "Email",
+    "action": "Enviame un email"
+  }
 }

@@ -1,13 +1,19 @@
+```vue
 <script setup lang="ts">
+import { ref } from 'vue'
 import { Icon } from '@iconify/vue'
+import EmailForm from './EmailForm.vue'
+
+const showEmailForm = ref(false)
 </script>
 
 <template>
   <div class="section-divider"></div>
 
-  <section id="contact" class="section contact">
+  <section id="contact" class="section about">
     <div class="container">
 
+      <!-- Section header -->
       <div class="section-header">
 
         <div>
@@ -23,19 +29,16 @@ import { Icon } from '@iconify/vue'
       </div>
 
 
-      <div class="contact-layout">
+      <!-- Main content -->
+      <div class="about-grid">
 
-        <!-- =========================================
-             INTRO
-        ========================================== -->
-
-        <div class="contact-intro">
+        <div class="about-content">
 
           <h3>
             {{ $t('contact.heading') }}
           </h3>
 
-          <p>
+          <p class="about-intro">
             {{ $t('contact.description') }}
           </p>
 
@@ -47,20 +50,25 @@ import { Icon } from '@iconify/vue'
 
         </div>
 
+      </div>
 
-        <!-- =========================================
-             CONTACT CARDS
-        ========================================== -->
+
+      <!-- Contact cards -->
+      <div class="contact-content">
 
         <div class="contact-cards">
 
           <!-- EMAIL -->
-          <a href="mailto:juanmarcelomolina2@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+
+          <button type="button" class="contact-card" :class="{ 'contact-card-active': showEmailForm }"
+            @click="showEmailForm = !showEmailForm">
+
             <div class="contact-icon">
               <Icon icon="mdi:email" />
             </div>
 
             <div class="contact-card-content">
+
               <span class="contact-card-label">
                 {{ $t('email.label') }}
               </span>
@@ -68,10 +76,13 @@ import { Icon } from '@iconify/vue'
               <span class="contact-card-value">
                 {{ $t('email.action') }}
               </span>
+
             </div>
 
-            <Icon icon="mdi:arrow-top-right" class="contact-arrow" />
-          </a>
+            <Icon :icon="showEmailForm ? 'mdi:chevron-up' : 'mdi:arrow-top-right'" class="contact-arrow" />
+
+          </button>
+
 
           <!-- LINKEDIN -->
 
@@ -123,7 +134,34 @@ import { Icon } from '@iconify/vue'
 
           </a>
 
+          <!-- WHATSAPP -->
+
+          <a href="https://wa.me/5492235713120" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <Icon icon="mdi:whatsapp" />
+            </div>
+
+            <div class="contact-card-content">
+
+              <span class="contact-card-label">
+                WhatsApp
+              </span>
+
+              <span class="contact-card-value">
+                +54 9 223 571 3120
+              </span>
+
+            </div>
+
+            <Icon icon="mdi:arrow-top-right" class="contact-arrow" />
+          </a>
+
         </div>
+
+
+        <!-- EMAIL FORM -->
+
+        <EmailForm v-if="showEmailForm" @close="showEmailForm = false" />
 
       </div>
 
@@ -133,11 +171,7 @@ import { Icon } from '@iconify/vue'
 
 
 <style scoped>
-/* =========================================
-   CONTACT
-========================================= */
-
-.contact {
+.about {
   position: relative;
   overflow: hidden;
 }
@@ -149,22 +183,12 @@ import { Icon } from '@iconify/vue'
 
 .section-header {
   display: flex;
+
   align-items: flex-start;
 
   gap: 20px;
 
-  margin-bottom: 70px;
-}
-
-.section-number {
-  padding-top: 8px;
-
-  color: #00aeff;
-
-  font-family: monospace;
-
-  font-size: 0.9rem;
-  font-weight: 600;
+  margin-bottom: 65px;
 }
 
 .section-eyebrow {
@@ -173,6 +197,7 @@ import { Icon } from '@iconify/vue'
   color: #38bdf8;
 
   font-size: 0.78rem;
+
   font-weight: 700;
 
   letter-spacing: 0.18em;
@@ -194,19 +219,15 @@ import { Icon } from '@iconify/vue'
 
 
 /* =========================================
-   LAYOUT
+   MAIN CONTENT
 ========================================= */
 
-.contact-layout {
+.about-grid {
   display: grid;
 
-  grid-template-columns: minmax(280px, 0.8fr) minmax(400px, 1.2fr);
+  grid-template-columns: 1fr;
 
-  gap: 80px;
-
-  max-width: 1050px;
-
-  margin: 0 auto;
+  justify-items: center;
 }
 
 
@@ -214,32 +235,38 @@ import { Icon } from '@iconify/vue'
    INTRO
 ========================================= */
 
-.contact-intro {
-  padding-top: 8px;
+.about-content {
+  width: 100%;
+
+  max-width: 760px;
+
+  text-align: center;
 }
 
-.contact-intro h3 {
+.about-content h3 {
   margin: 0 0 20px;
 
   color: #f8fafc;
 
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
 
-  line-height: 1.25;
+  line-height: 1.2;
 
   letter-spacing: -0.03em;
 }
 
-.contact-intro p {
-  max-width: 480px;
-
+.about-content .about-intro {
   margin: 0;
 
-  color: #94a3b8;
+  color: #cbd5e1;
 
-  font-size: 0.95rem;
+  font-size: 1.2rem;
 
-  line-height: 1.8;
+  line-height: 1.7;
+}
+
+.about-content .about-intro::first-letter {
+  color: #00aeff;
 }
 
 
@@ -251,14 +278,15 @@ import { Icon } from '@iconify/vue'
   display: flex;
 
   align-items: center;
+  justify-content: center;
 
   gap: 10px;
 
-  margin-top: 28px !important;
+  margin: 28px 0 0;
 
-  color: #cbd5e1 !important;
+  color: #cbd5e1;
 
-  font-size: 0.82rem !important;
+  font-size: 0.85rem;
 }
 
 .availability-dot {
@@ -277,13 +305,26 @@ import { Icon } from '@iconify/vue'
 
 
 /* =========================================
+   CONTACT CONTENT
+========================================= */
+
+.contact-content {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 70px auto 0;
+}
+
+
+/* =========================================
    CONTACT CARDS
 ========================================= */
 
 .contact-cards {
-  display: flex;
+  display: grid;
 
-  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 14px;
 }
@@ -298,11 +339,21 @@ import { Icon } from '@iconify/vue'
 
   gap: 18px;
 
+  width: 100%;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
   padding: 20px 22px;
 
   color: inherit;
 
   text-decoration: none;
+
+  text-align: left;
+
+  font-family: inherit;
 
   background:
     linear-gradient(145deg,
@@ -314,6 +365,8 @@ import { Icon } from '@iconify/vue'
   border-radius: 8px;
 
   overflow: hidden;
+
+  cursor: pointer;
 
   transition:
     transform 0.3s ease,
@@ -337,7 +390,8 @@ import { Icon } from '@iconify/vue'
 
   height: 1px;
 
-  background: linear-gradient(90deg,
+  background:
+    linear-gradient(90deg,
       rgba(0, 174, 255, 0),
       rgba(0, 174, 255, 0.65) 20%,
       rgba(56, 189, 248, 0.4) 60%,
@@ -348,7 +402,7 @@ import { Icon } from '@iconify/vue'
 
 
 .contact-card:hover {
-  transform: translateX(5px);
+  transform: translateY(-4px);
 
   border-color: rgba(0, 174, 255, 0.4);
 
@@ -360,6 +414,16 @@ import { Icon } from '@iconify/vue'
   box-shadow:
     0 15px 40px rgba(0, 0, 0, 0.25),
     0 0 25px rgba(0, 174, 255, 0.05);
+}
+
+
+/* Active email */
+
+.contact-card-active {
+  border-color: rgba(0, 174, 255, 0.45);
+
+  box-shadow:
+    0 0 25px rgba(0, 174, 255, 0.06);
 }
 
 
@@ -393,6 +457,7 @@ import { Icon } from '@iconify/vue'
     border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
+
 
 .contact-card:hover .contact-icon {
   background: rgba(0, 174, 255, 0.1);
@@ -476,16 +541,22 @@ import { Icon } from '@iconify/vue'
    TABLET
 ========================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
-  .contact-layout {
-    grid-template-columns: 1fr;
-
-    gap: 45px;
+  .contact-content {
+    margin-top: 55px;
   }
 
-  .contact-intro p {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
     max-width: 700px;
+  }
+
+  .about-content .about-intro {
+    font-size: 1.1rem;
   }
 
 }
@@ -503,22 +574,56 @@ import { Icon } from '@iconify/vue'
     margin-bottom: 45px;
   }
 
-  .section-number {
-    font-size: 0.75rem;
-  }
-
   .section-header h2 {
     font-size: 2rem;
   }
 
-  .contact-layout {
-    gap: 35px;
+  .about-content {
+    width: 100%;
+
+    max-width: 100%;
+  }
+
+  .about-content h3 {
+    font-size: 1.8rem;
+
+    line-height: 1.2;
+  }
+
+  .about-content .about-intro {
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+  }
+
+  .contact-content {
+    margin-top: 45px;
   }
 
 }
 
 
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
 @media (max-width: 430px) {
+
+  .about-content {
+    padding: 0 10px;
+
+    box-sizing: border-box;
+  }
+
+  .about-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .about-content .about-intro {
+    font-size: 1rem;
+
+    line-height: 1.65;
+  }
 
   .contact-card {
     gap: 13px;
@@ -543,6 +648,11 @@ import { Icon } from '@iconify/vue'
 
 }
 
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
 @media (max-width: 380px) {
 
   .contact-card {
@@ -563,3 +673,4 @@ import { Icon } from '@iconify/vue'
 
 }
 </style>
+```

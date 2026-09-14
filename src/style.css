@@ -998,3 +998,20 @@ a {
 .section-header h2 {
   overflow-wrap: break-word;
 }
+
+/* =========================================
+   TEST SCROLL REVEAL
+========================================= */
+
+.scroll-reveal {
+  opacity: 0 !important;
+  transform: translateY(60px) !important;
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease !important;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

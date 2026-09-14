@@ -18,6 +18,7 @@ onMounted(() => {
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+
         if (entry.isIntersecting) {
           entry.target.classList.add('is-visible')
           observer?.unobserve(entry.target)
@@ -30,14 +31,17 @@ onMounted(() => {
   )
 
   const elements = document.querySelectorAll(
-    '.section, .timeline-item, .project-card, .skill-card, .architecture-layer, .principle-card, .contact-card'
+    '.section, .section-header, .about-content, .stat-card, .focus-card, .timeline-item, .project-card, .skill-card, .architecture-layer, .principle-card, .contact-card'
   )
+
 
   elements.forEach((element) => {
     element.classList.add('scroll-reveal')
     observer?.observe(element)
   })
 })
+
+
 
 onUnmounted(() => {
   observer?.disconnect()
