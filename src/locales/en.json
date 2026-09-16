@@ -243,7 +243,7 @@
       "ai": {
         "title": "AI Data Analysis Platform",
         "description": "AI-powered solution built with Python and .NET for analyzing large data files, detecting inconsistencies and potential anomalies, and persisting analysis results in SQL Server.",
-        "status": "Coming soon"
+        "status": "Available"
       }
     }
   },

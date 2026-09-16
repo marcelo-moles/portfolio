@@ -243,7 +243,7 @@
       "ai": {
         "title": "Plataforma de Análisis de Datos con IA",
         "description": "Solución basada en IA desarrollada con Python y .NET para analizar archivos de datos de gran tamaño, detectar inconsistencias y posibles anomalías, y persistir los resultados del análisis en SQL Server.",
-        "status": "Próximamente"
+        "status": "Disponible"
       }
     }
   },

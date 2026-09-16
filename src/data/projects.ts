@@ -88,9 +88,9 @@ export const projects: Project[] = [
       'Data Analysis',
       'Large File Processing'
     ],
-    featured: false,
-    status: 'coming soon',
-    //github: 'https://github.com/marcelo-moles/corporate-expenses-code-sample',
+    featured: true,
+    status: 'completed',
+    github: 'https://github.com/marcelo-moles/AIDataAnalysisPlatform',
   }
 ]
 
