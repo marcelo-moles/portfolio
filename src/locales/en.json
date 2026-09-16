@@ -100,11 +100,8 @@
       "technologies": [
         "C#",
         ".NET",
-        "ASP.NET Core",
         "REST APIs",
         "SQL Server",
-        "MongoDB",
-        "Docker",
         "Git"
       ]
     },
@@ -115,7 +112,7 @@
       "company": "ICBC Bank Argentina",
       "description": "Backend development for banking environments, working on APIs, services, integrations and components supporting critical business processes.",
       "responsibilities": [
-        "Development of REST APIs and backend services using C# and .NET.",
+        "Development of REST APIs and backend services using C#.NET and JAVA",
         "Implementation of business logic and system integrations.",
         "Development of microservices and distributed components.",
         "Work with SQL Server databases and NoSQL solutions.",
@@ -125,13 +122,15 @@
       "technologies": [
         "C#",
         ".NET 8/9",
-        "ASP.NET Core",
+        "JAVA",
+        "Python",
         "REST APIs",
         "Microservices",
         "SQL Server",
-        "MongoDB",
         "Kafka",
-        "Docker"
+        "Docker",
+        "Git",
+        "Azure Data Factory"
       ]
     }
   },
