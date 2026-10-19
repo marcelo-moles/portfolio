@@ -39,7 +39,12 @@ const technologyIcons: Record<string, string> = {
   'Clean Architecture': 'mdi:layers-outline',
   'DDD': 'mdi:hexagon-outline',
   'Microservices': 'mdi:sitemap-outline',
-  'Event-Driven': 'mdi:transit-connection-variant'
+  'Event-Driven': 'mdi:transit-connection-variant',
+  'IA' : 'simple-icons:claude',
+  'AI': 'simple-icons:claude',
+  'Data Analysis': 'mdi:chart-line-variant',
+  'Data Visualization': 'mdi:chart-bell-curve-cumulative',
+  'Large File Processing': 'mdi:file-multiple-outline'
 }
 
 const getTechnologyIcon = (technology: string): string => {
@@ -70,7 +75,6 @@ const getTechnologyIcon = (technology: string): string => {
         <article v-for="(project, index) in projects" :key="project.id" class="project-card">
 
           <div class="project-card-top">
-
             <span class="project-index">
               {{ String(index + 1).padStart(2, '0') }}
             </span>

@@ -313,6 +313,53 @@
 
         </article>
 
+        <!-- IA-->
+        <article class="skill-card">
+
+          <div class="skill-card-header">
+
+            <div class="skill-icon">
+              <Icon icon="simple-icons:claude" />
+            </div>
+
+            <div>
+              <span class="skill-category">
+                {{ $t('skills.aiAssistedDevelopment.category') }}
+              </span>
+
+              <h3>
+                {{ $t('skills.aiAssistedDevelopment.title') }}
+              </h3>
+            </div>
+
+          </div>
+
+          <div class="technology-list">
+
+            <span class="technology">
+              <Icon icon="simple-icons:claude" />
+              Claude
+            </span>
+
+            <span class="technology">
+              <Icon icon="lucide:bot" />
+              AI Agents
+            </span>
+
+            <span class="technology">
+              <Icon icon="lucide:workflow" />
+              Skills
+            </span>
+
+            <span class="technology">
+              <Icon icon="lucide:brain" />
+              Project Memory
+            </span>
+
+          </div>
+
+        </article>
+
       </div>
 
     </div>
@@ -391,11 +438,9 @@ import { Icon } from '@iconify/vue'
   padding: 30px;
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       rgba(7, 16, 28, 0.92),
-      rgba(3, 7, 18, 0.82)
-    );
+      rgba(3, 7, 18, 0.82));
 
   border: 1px solid rgba(96, 165, 250, 0.14);
   border-radius: 16px;
@@ -416,13 +461,11 @@ import { Icon } from '@iconify/vue'
   width: calc(100% - 16px);
   height: 1px;
 
-  background: linear-gradient(
-    90deg,
-    rgba(0, 174, 255, 0),
-    rgba(0, 174, 255, 0.7) 20%,
-    rgba(56, 189, 248, 0.5) 60%,
-    rgba(0, 174, 255, 0)
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 174, 255, 0),
+      rgba(0, 174, 255, 0.7) 20%,
+      rgba(56, 189, 248, 0.5) 60%,
+      rgba(0, 174, 255, 0));
 
   opacity: 0.8;
 }
@@ -445,11 +488,9 @@ import { Icon } from '@iconify/vue'
   border-color: rgba(0, 174, 255, 0.22);
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       rgba(7, 20, 36, 0.96),
-      rgba(3, 7, 18, 0.85)
-    );
+      rgba(3, 7, 18, 0.85));
 }
 
 /* =========================================

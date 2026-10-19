@@ -130,7 +130,8 @@
         "Kafka",
         "Docker",
         "Git",
-        "Azure Data Factory"
+        "Azure Data Factory",
+        "AI: Claude"
       ]
     }
   },
@@ -161,6 +162,10 @@
     "frontend": {
       "category": "Web",
       "title": "Frontend"
+    },
+     "aiAssistedDevelopment": {
+    "category": "AI & Development Tools",
+    "title": "AI-Assisted Development"
     }
   },
 

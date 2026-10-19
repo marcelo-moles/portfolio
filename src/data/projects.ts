@@ -54,7 +54,8 @@ export const projects: Project[] = [
       'DDD',
       'Clean Architecture',
       'MongoDB',
-      'Docker'
+      'Docker',
+      'AI'
     ],
     status: 'completed',
     featured: true,
@@ -86,7 +87,8 @@ export const projects: Project[] = [
       'SQL Server',
       'Artificial Intelligence',
       'Data Analysis',
-      'Large File Processing'
+      'Large File Processing',
+      'IA'
     ],
     featured: true,
     status: 'completed',
