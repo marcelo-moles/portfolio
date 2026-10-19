@@ -131,8 +131,8 @@
 const baseUrl = import.meta.env.BASE_URL
 import { Icon } from '@iconify/vue'
 
-const cvSpanishUrl = `${baseUrl}cv/MarceloMolina.pdf`
-const cvEnglishUrl = `${baseUrl}cv/MarceloMolina_EN.pdf`
+const cvSpanishUrl = `${baseUrl}cv/CV_Marcelo_Molina_ES.pdf`
+const cvEnglishUrl = `${baseUrl}cv/CV_Marcelo_Molina_EN.pdf`
 </script>
 
 
